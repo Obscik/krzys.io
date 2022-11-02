@@ -1,7 +1,6 @@
 html {
     display: flex;
     min-height: 100%;
-
 }
 
 body {
@@ -16,6 +15,15 @@ body {
 
 h1 {
     font-size: 5em;
+}
+
+.hidden {
+    display: none;
+}
+
+.visible {
+    display:inherit;
+    
 }
 
 .card {
@@ -35,6 +43,10 @@ h1 {
     margin: 0 auto;
     display: flex;
     justify-content: center;
+}
+
+.row2 {
+    display: none;
 }
 
 a,a:hover {
