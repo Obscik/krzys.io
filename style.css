@@ -9,21 +9,13 @@ body {
     font-family: 'Courgette', sans-serif !important;
     display: flex;
     justify-content: center;
-    background-image: url(bg.jpg);
+    background-color: #1e1e1e;
+    background-image: url(bg.webp);
     background-size:cover;
 }
 
 h1 {
     font-size: 5em;
-}
-
-.hidden {
-    display: none;
-}
-
-.visible {
-    display:inherit;
-    
 }
 
 .card {
@@ -45,9 +37,9 @@ h1 {
     justify-content: center;
 }
 
-.row2 {
+/* #events {
     display: none;
-}
+} */
 
 a,a:hover {
     text-decoration: none;

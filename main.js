@@ -1,7 +1,7 @@
 function unfold()
 {
-    document.getElementById('events').setAttribute("class", "visible");
-    document.getElementById('row').setAttribute("class", "hidden");
-
+    document.getElementById('row').classList.add("d-none")
+    document.getElementById('events').classList.remove("d-none")
+    document.getElementById('events').classList.add("d-flex")
 
 }
