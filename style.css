@@ -45,3 +45,8 @@ a,a:hover {
     text-decoration: none;
     color: inherit;
 }
+
+
+.smaller {
+    font-size: 1.8rem!important;
+}
