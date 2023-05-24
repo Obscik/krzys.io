@@ -1,165 +1,184 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html>
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Zdjęcia Krzysia</title>
-    <meta name="description" content="Świetne zdjęcia zwierząt, roślin oraz relacje z wydarzeń! Musisz wpaść i popatrzeć!">
-    <meta property="og:title" content="Zdjęcia Krzysia" />
-    <meta property="og:description" content="Świetne zdjęcia zwierząt, roślin oraz relacje z wydarzeń! Musisz wpaść i popatrzeć!" />
-    <meta property="og:url" content="https://zdjeciakrzysia.pl/" />
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="materialize.min.css"  media="screen,projection"/>
+    <link type="text/css" rel="stylesheet" href="style.css"  media="screen,projection"/>
 
-
-
-
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
-    <link href='https://fonts.googleapis.com/css?family=Courgette:400,300,700' rel='stylesheet' type='text/css'>
-    <link href='style.css' rel='stylesheet' type='text/css'>
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   </head>
+
   <body>
-    <main>
-    <section class="py-5 text-center container">
-      <div class="row py-lg-5">
-        <div class="col-md-8 mx-auto">
-          <h1 class="fw-light">Jestem Krzyś</h1>
-          <p class="lead">Od zawsze interesowałem się fotografią. Kocham robić zdjęcia. Efektami mojej pasji dzielę się z wami.</p>
-          <p>
-            <a href="mailto:kontaktdokrzysia@gmail.com" class="btn btn-primary my-2">Napisz do mnie maila</a>
-          </p>
+    <div class="title container section center-align">
+        <h1>Jestem Krzyś</h1>
+
+        <h4 class="flow-text">Od zawsze interesowałem się fotografią. Kocham robić zdjęcia.</h4>
+        <h2 class="flow-text"></h2>
+          <a id="mail" class="mail btn-large pink hoverable" onclick="kontakt()">Skontaktuj się ze mną tutaj</a>
+          <a id="wroc" href="" class="mail btn-large blue hoverable hide">Wróć na Stronę główną</a>
+    </div>
+
+    <div class="container divider"></div>
+    <div id="glowne" class="container section">
+        <div class="row">
+            <div class="col s12 m12 l4 xl4">
+                <div class="card z-depth-4">
+                    <div class="card-image">
+                      <img src="img\ludzie.webp">
+                      <span class="card-title">Przyrodnicze</span>
+                    </div>
+                    <div class="card-action center-align pulse">
+                        <a class="waves-effect waves-light btn-large darken-2 hoverable" onclick="przyroda()">Wchodzę<i class="material-icons right">send</i></a>
+                    </div>
+                  </div>
+            </div>
+            <div class="col s12 m12 l4 xl4">
+                <div class="card z-depth-4">
+                    <div class="card-image ">
+                      <img src="img\ludzie.webp">
+                      <span class="card-title">Wydarzenia</span>
+                    </div>
+                    <div class="card-action center-align pulse">
+                        <a class="waves-effect waves-light btn-large darken-2 hoverable" onclick="wydarzenia()">Wchodzę<i class="material-icons right">send</i></a>
+                    </div>
+                  </div>
+            </div>
+            <div class="col s12 m12 l4 xl4">
+                <div class="card z-depth-4">
+                    <div class="card-image">
+                      <img src="img\ludzie.webp">
+                      <span class="card-title">Inne</span>
+                    </div>
+                    <div class="card-action center-align pulse">
+                        <a class="waves-effect waves-light btn-large darken-2 hoverable" onclick="inne()">Wchodzę<i class="material-icons right">send</i></a>
+                    </div>
+                  </div>
+            </div>
         </div>
-      </div>
-    </section>
-
-<div class="container">
-  <div id="row" class="row">
-    <div class="card text-center" style="width: 18rem;"><a href="https://zwierzeta.zdjeciakrzysia.pl">
-      <img src="img/rosliny.webp" class="card-img-top" alt="...">
-      <div class="card-body">
-        <h2 class="card-title">Przyrodnicze</h2>
-        <a href="#" class="btn btn-primary ali" onclick="przyrodnicze()">Rozwiń!</a>
-      </div></a>
-    </div>
-
-    <div class="card text-center" style="width: 18rem;"><a href="https://ludzie.zdjeciakrzysia.pl">
-      <img src="img/ludzie.webp" class="card-img-top" alt="...">
-      <div class="card-body">
-        <h2 class="card-title">Wydarzenia</h2>
-        <a href="#" class="btn btn-primary ali" onclick="wydarzenia()">Rozwiń!</a>
-      </div></a>
-    </div>
-
-    <!-- <div class="card text-center" style="width: 18rem;"><a href="https://rosliny.zdjeciakrzysia.pl">
-      <img src="img/rosliny.webp" class="card-img-top" alt="...">
-      <div class="card-body">
-        <h2 class="card-title"></h2>
-        <a href="rosliny" class="btn btn-primary ali" >Wchodzę!</a>
-      </div></a>
-    </div>
-     -->
-    <div class="card text-center" style="width: 18rem;"><a href="https://inne.zdjeciakrzysia.pl">
-      <img src="img/inne.webp" class="card-img-top" alt="...">
-      <div class="card-body">
-        <h2 class="card-title">Inne</h2>
-        <a href="#" class="btn btn-primary ali" onclick="inne()">Rozwiń!</a>
-      </div></a>
-    </div>
-  </div>
-</div>
+    </div> 
 
 
-<div class="container">     
-  <div id="przyrodnicze" class="row d-none">
-    <div class="d-flex justify-content-center"><a href="./" class="btn btn-primary my-2">Wróć</a></div>
-    <div class="card text-center" style="width: 18rem;"><a href="https://biegfirmowy.zdjeciakrzysia.pl">
-      <img src="img/rosliny.webp" class="card-img-top" alt="...">
-      <div class="card-body">
-        <h2 class="card-title">Rośliny</h2>
-        <a href="rosliny" class="btn btn-primary ali">Wchodzę!</a>
-      </div></a>
-    </div>
-
-    <div class="card text-center" style="width: 18rem;"><a href="https://wildrun.zdjeciakrzysia.pl">
-      <img src="img/zwierzeta.webp" class="card-img-top" alt="...">
-      <div class="card-body">
-        <h2 class="card-title">Zwierzęta</h2>
-        <a href="zwierzeta" class="btn btn-primary ali">Wchodzę!</a>
-      </div></a>
-    </div>
-  </div>
-</div>
-
-
-<div class="container">     
-  <div id="events" class="row d-none">
-    <div class="d-flex justify-content-center"><a href="./" class="btn btn-primary my-2">Wróć</a></div>
-    <div class="card text-center" style="width: 18rem;"><a href="https://biegfirmowy.zdjeciakrzysia.pl">
-      <img src="img/biegfirmowy.webp" class="card-img-top" alt="...">
-      <div class="card-body">
-        <h2 class="card-title">Bieg Firmowy</h2>
-        <a href="biegfirmowy2022" class="btn btn-primary ali">Wchodzę!</a>
-      </div></a>
-    </div>
-
-    <div class="card text-center" style="width: 18rem;"><a href="https://wildrun.zdjeciakrzysia.pl">
-      <img src="img/wildrun.webp" class="card-img-top" alt="...">
-      <div class="card-body">
-        <h2 class="card-title">WildRun</h2>
-        <a href="wildrun2022" class="btn btn-primary ali">Wchodzę!</a>
-      </div></a>
-    </div>
-
-    <div class="card text-center" style="width: 18rem;"><a href="https://halloween22.zdjeciakrzysia.pl">
-      <img src="img/halloween22.webp" class="card-img-top" alt="...">
-      <div class="card-body">
-        <h2 class="card-title">Bieg Halloween</h2>
-        <a href="bieghalloween2022" class="btn btn-primary ali">Wchodzę!</a>
-      </div></a>
-    </div>
+    <div id="przyroda" class="container section valign-wrapper hide">
+        <div class="row">
+            <div class="col s12 m12 l4 xl4">
+                <div class="card z-depth-4">
+                    <div class="card-image">
+                      <img src="img\ludzie.webp">
+                      <span class="card-title">Card Title</span>
+                    </div>
+                    <div class="card-action center-align">
+                        <a class="waves-effect waves-light btn-large  darken-2 pulse hoverable">Wchodzę<i class="material-icons right">send</i></a>
+                    </div>
+                  </div>
+            </div>
+            <div class="col s12 m12 l4 xl4">
+                <div class="card z-depth-4">
+                    <div class="card-image ">
+                      <img src="img\ludzie.webp">
+                      <span class="card-title">Card Title</span>
+                    </div>
+                    <div class="card-action center-align">
+                        <a class="waves-effect waves-light btn-large  darken-2 pulse hoverable">Wchodzę<i class="material-icons right">send</i></a>
+                    </div>
+                  </div>
+            </div>
+            <div class="col s12 m12 l4 xl4">
+                <div class="card z-depth-4">
+                    <div class="card-image">
+                      <img src="img\ludzie.webp">
+                      <span class="card-title">Card Title</span>
+                    </div>
+                    <div class="card-action center-align">
+                        <a class="waves-effect waves-light btn-large  darken-2 pulse hoverable">Wchodzę<i class="material-icons right">send</i></a>
+                    </div>
+                  </div>
+            </div>
+        </div>
+    </div> 
 
 
-    <div class="card text-center" style="width: 18rem;"><a href="">
-      <img src="img/biegtrzechwzgorz22.webp" class="card-img-top" alt="...">
-      <div class="card-body">
-        <h2 class="card-title smaller">Bieg Trzech Wzgórz</h2>
-        <a href="biegtrzechwzgorz2022" class="btn btn-primary ali">Wchodzę!</a>
-      </div></a>
-    </div>
-  </div>
-</div>
+    <div id="wydarzenia" class="container section valign-wrapper hide">
+        <div class="row">
+            <div class="col s12 m12 l4 xl4">
+                <div class="card z-depth-4">
+                    <div class="card-image">
+                      <img src="img\ludzie.webp">
+                      <span class="card-title">Card Title</span>
+                    </div>
+                    <div class="card-action center-align">
+                        <a class="waves-effect waves-light btn-large  darken-2 pulse hoverable">Wchodzę<i class="material-icons right">send</i></a>
+                    </div>
+                  </div>
+            </div>
+            <div class="col s12 m12 l4 xl4">
+                <div class="card z-depth-4">
+                    <div class="card-image ">
+                      <img src="img\ludzie.webp">
+                      <span class="card-title">Card Title</span>
+                    </div>
+                    <div class="card-action center-align">
+                        <a class="waves-effect waves-light btn-large  darken-2 pulse hoverable">Wchodzę<i class="material-icons right">send</i></a>
+                    </div>
+                  </div>
+            </div>
+            <div class="col s12 m12 l4 xl4">
+                <div class="card z-depth-4">
+                    <div class="card-image">
+                      <img src="img\ludzie.webp">
+                      <span class="card-title">Card Title</span>
+                    </div>
+                    <div class="card-action center-align">
+                        <a class="waves-effect waves-light btn-large  darken-2 pulse hoverable">Wchodzę<i class="material-icons right">send</i></a>
+                    </div>
+                  </div>
+            </div>
+        </div>
+    </div> 
 
 
-<div class="container">     
-  <div id="inne" class="row d-none">
-    <div class="d-flex justify-content-center"><a href="./" class="btn btn-primary my-2">Wróć</a></div>
-    <div class="card text-center" style="width: 18rem;"><a href="https://biegfirmowy.zdjeciakrzysia.pl">
-      <img src="img/jarmark2022.webp" class="card-img-top" alt="...">
-      <div class="card-body">
-        <h2 class="card-title smaller">Jarmark Bożonarodzeniowy</h2>
-        <a href="jarmark2022" class="btn btn-primary ali">Wchodzę!</a>
-      </div></a>
-    </div>
+    <div id="inne" class="container section valign-wrapper hide">
+        <div class="row">
+            <div class="col s12 m12 l4 xl4">
+                <div class="card z-depth-4">
+                    <div class="card-image">
+                      <img src="img\ludzie.webp">
+                      <span class="card-title">Card Title</span>
+                    </div>
+                    <div class="card-action center-align">
+                        <a class="waves-effect waves-light btn-large  darken-2 pulse hoverable">Wchodzę<i class="material-icons right">send</i></a>
+                    </div>
+                  </div>
+            </div>
+            <div class="col s12 m12 l4 xl4">
+                <div class="card z-depth-4">
+                    <div class="card-image ">
+                      <img src="img\ludzie.webp">
+                      <span class="card-title">Card Title</span>
+                    </div>
+                    <div class="card-action center-align">
+                        <a class="waves-effect waves-light btn-large  darken-2 pulse hoverable">Wchodzę<i class="material-icons right">send</i></a>
+                    </div>
+                  </div>
+            </div>
+            <div class="col s12 m12 l4 xl4">
+                <div class="card z-depth-4">
+                    <div class="card-image">
+                      <img src="img\ludzie.webp">
+                      <span class="card-title">Card Title</span>
+                    </div>
+                    <div class="card-action center-align">
+                        <a class="waves-effect waves-light btn-large  darken-2 pulse hoverable">Wchodzę<i class="material-icons right">send</i></a>
+                    </div>
+                  </div>
+            </div>
+        </div>
+    </div> 
 
-    <div class="card text-center" style="width: 18rem;"><a href="https://biegfirmowy.zdjeciakrzysia.pl">
-      <img src="img/luminapark.webp" class="card-img-top" alt="...">
-      <div class="card-body">
-        <h2 class="card-title smaller">Lumina Park</h2>
-        <a href="luminapark" class="btn btn-primary ali">Wchodzę!</a>
-      </div></a>
-    </div>
 
-    <div class="card text-center" style="width: 18rem;"><a href="https://wildrun.zdjeciakrzysia.pl">
-      <img src="img/inne.webp" class="card-img-top" alt="...">
-      <div class="card-body">
-        <h2 class="card-title">Różne</h2>
-        <a href="inne" class="btn btn-primary ali">Wchodzę!</a>
-      </div></a>
-    </div>
-  </div>
-</div>
-
-
-</main>
+          
 
 
 
@@ -168,10 +187,8 @@
 
 
 
-
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
-<script src="main.js"></script>
+    <script type="text/javascript" src="./main.js"></script>
+    <script type="text/javascript" src="./materialize.min.js"></script>
 
   </body>
 </html>

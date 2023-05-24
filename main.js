@@ -1,23 +1,31 @@
+
 function wydarzenia()
 {
-    document.getElementById('row').classList.add("d-none")
-    document.getElementById('events').classList.remove("d-none")
-    document.getElementById('events').classList.add("d-flex")
-
+    document.getElementById('glowne').classList.add("hide")
+    document.getElementById('wydarzenia').classList.remove("hide")
+    document.getElementById('mail').classList.add("hide")
+    document.getElementById('wroc').classList.remove("hide")
 }
 
 function inne()
 {
-    document.getElementById('row').classList.add("d-none")
-    document.getElementById('inne').classList.remove("d-none")
-    document.getElementById('inne').classList.add("d-flex")
+    document.getElementById('glowne').classList.add("hide")
+    document.getElementById('inne').classList.remove("hide")
+    document.getElementById('mail').classList.add("hide")
+    document.getElementById('wroc').classList.remove("hide")
+}
+
+function przyroda()
+{
+    document.getElementById('glowne').classList.add("hide")
+    document.getElementById('przyroda').classList.remove("hide")
+    document.getElementById('mail').classList.add("hide")
+    document.getElementById('wroc').classList.remove("hide")
 
 }
 
-function przyrodnicze()
+function kontakt()
 {
-    document.getElementById('row').classList.add("d-none")
-    document.getElementById('przyrodnicze').classList.remove("d-none")
-    document.getElementById('przyrodnicze').classList.add("d-flex")
-
+    document.getElementById('glowne').classList.add("hide")
+    document.getElementById('kontakt').classList.remove("hide")
 }

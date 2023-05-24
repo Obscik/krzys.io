@@ -1,7 +1,7 @@
 {
   "name": "photography",
   "version": "3.0.0",
-  "description": "A jekyll website for photographer cum developer",
+  "description": "A jekyll website for photographer",
   "main": "npmfile.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
