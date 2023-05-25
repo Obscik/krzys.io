@@ -46,9 +46,8 @@ h1 {
 }
 
 .title {
-    background-image: url(img/tabliczka.webp);
+    background-image: url(img/tabliczka.png);
     background-repeat: no-repeat;
-    background-size: contain;
     background-position: center;
-    
+    background-size: contain;
 }
