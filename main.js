@@ -1,3 +1,11 @@
+// javascript to open modal1 on button click
+var elems = document.querySelectorAll('.modal');
+var instances = M.Modal.init(elems, { dismissible: true });
+var instance = M.Modal.getInstance(elems[0]);
+function kontakt() {
+    instance.open();
+}
+
 
 function wydarzenia()
 {
@@ -24,8 +32,5 @@ function przyroda()
 
 }
 
-function kontakt()
-{
-    document.getElementById('glowne').classList.add("hide")
-    document.getElementById('kontakt').classList.remove("hide")
-}
+
+

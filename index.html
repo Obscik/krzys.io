@@ -1,13 +1,10 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <!--Import Google Icon Font-->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <!--Import materialize.css-->
     <link type="text/css" rel="stylesheet" href="materialize.min.css"  media="screen,projection"/>
     <link type="text/css" rel="stylesheet" href="style.css"  media="screen,projection"/>
-
-    <!--Let browser know website is optimized for mobile-->
+    <link rel="shortcut icon" href="img/icon.png" type="image/x-icon">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Zdjęcia Krzysia</title>
     <meta name="description" content="Świetne zdjęcia zwierząt, roślin oraz relacje z wydarzeń! Musisz wpaść i popatrzeć!">
@@ -17,13 +14,27 @@
   </head>
 
   <body>
+
+    <div id="kontakt" class="modal">
+      <div class="modal-content center-align">
+        <h2>Kontakt</h2>
+        <h5>Jeśli chcesz się ze mną skontaktować, napisz do mnie na adres: <a href="mailto:kontaktdokrzysia@gmail.com">kontaktdokrzysia@gmail.com
+          </a></h5>
+      </div>
+      <div class="modal-footer">
+        <a href="#!" class="modal-close waves-effect waves-green btn-flat">Zamknij</a>
+      </div>
+    </div>
+
+
+
     <div class="title container section center-align">
         <h1>Jestem Krzyś</h1>
 
         <h4 class="flow-text">Od zawsze interesowałem się fotografią. Kocham robić zdjęcia.</h4>
         <h2 class="flow-text"></h2>
           <a id="mail" class="mail btn-large orange hoverable" onclick="kontakt()">Skontaktuj się ze mną tutaj</a>
-          <a id="wroc" href="" class="mail btn-large blue hoverable hide">Wróć na Stronę główną</a>
+          <a id="wroc" href="" class="btn-large blue hoverable hide">Wróć na Stronę główną</a>
     </div>
 
     <div class="container divider"></div>
@@ -194,17 +205,15 @@
     </div> 
 
 
-          
 
 
 
 
 
 
+    <script src="./materialize.min.js"></script>  
+    <script src="./main.js"></script>
 
-
-    <script type="text/javascript" src="./main.js"></script>
-    <script type="text/javascript" src="./materialize.min.js"></script>
 
   </body>
 </html>
