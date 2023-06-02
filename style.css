@@ -18,7 +18,7 @@ h1 {
 }
 
 .card {
-    background: rgba(230,230,230, 0.069);
+    background: rgba(230,230,230, 0.4);
     backdrop-filter: blur(3px) ;
     padding: 0;
 }
@@ -33,12 +33,10 @@ h1 {
 }
 
 .modal, .modal-footer {
-    background: rgba(230,230,230, 0.2137) !important;
+    background: rgba(230,230,230, 0.8) !important;
     backdrop-filter: blur(123px) ;
 }
-.modal-footer a {
-    color: white ;
-}
+
 
 .divider {
     margin-top: 2%;
