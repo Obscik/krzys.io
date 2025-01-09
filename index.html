@@ -1,38 +1,292 @@
-<!DOCTYPE html><html lang="pl"><head><meta charSet="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/><link rel="stylesheet" href="/_next/static/css/5b9794e8c2b9a58c.css" data-precedence="next"/><link rel="preload" as="script" fetchPriority="low" href="/_next/static/chunks/webpack-215d93283df1116f.js"/><script src="/_next/static/chunks/4bd1b696-20882bf820444624.js" async=""></script><script src="/_next/static/chunks/517-3d0ef3a9ce2aa823.js" async=""></script><script src="/_next/static/chunks/main-app-b8f21b5658eebe0d.js" async=""></script><script src="/_next/static/chunks/742-d38a221f97e11c93.js" async=""></script><script src="/_next/static/chunks/app/page-356b50db44fcdd20.js" async=""></script><title>Zdjęcia Krzysia</title><meta name="description" content="Świetne zdjęcia zwierząt, roślin oraz relacje z wydarzeń! Musisz wpaść i popatrzeć!"/><link rel="icon" href="/favicon.ico" type="image/x-icon" sizes="16x16"/><style>
-          @keyframes fadeInDown {
-            from {
-              opacity: 0;
-              transform: translate3d(0, -20px, 0);
-            }
-            to {
-              opacity: 1;
-              transform: translate3d(0, 0, 0);
-            }
-          }
-          
-          @keyframes fadeInUp {
-            from {
-              opacity: 0;
-              transform: translate3d(0, 20px, 0);
-            }
-            to {
-              opacity: 1;
-              transform: translate3d(0, 0, 0);
-            }
-          }
-          
-          .animate-fade-in-down {
-            animation: fadeInDown 0.5s ease-out;
-          }
-          
-          .animate-fade-in-up {
-            animation: fadeInUp 0.5s ease-out;
-          }
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="materialize.min.css"  media="screen,projection"/>
+    <link type="text/css" rel="stylesheet" href="style.css"  media="screen,projection"/>
+    <link rel="shortcut icon" href="img/icon.png" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Zdjęcia Krzysia</title>
+    <meta name="description" content="Świetne zdjęcia zwierząt, roślin oraz relacje z wydarzeń! Musisz wpaść i popatrzeć!">
+    <meta property="og:title" content="Zdjęcia Krzysia" />
+    <meta property="og:description" content="Świetne zdjęcia zwierząt, roślin oraz relacje z wydarzeń! Musisz wpaść i popatrzeć!" />
+    <meta property="og:url" content="https://zdjeciakrzysia.pl/" />
+  </head>
 
-          .line-clamp-2 {
-            display: -webkit-box;
-            -webkit-line-clamp: 2;
-            -webkit-box-orient: vertical;
-            overflow: hidden;
-          }
-        </style><script src="/_next/static/chunks/polyfills-42372ed130431b0a.js" noModule=""></script></head><body class="__className_d65c78"><div class="min-h-screen bg-gradient-to-br from-blue-100 to-purple-100 flex flex-col items-center justify-center"><header class="text-center mb-12 animate-fade-in-down"><h1 class="text-5xl font-bold mb-4 text-blue-800">Jestem Krzyś</h1><p class="text-xl mb-2 text-gray-700">Od zawsze interesowałem się fotografią.</p><p class="text-xl mb-6 text-gray-700">Kocham robić zdjęcia.</p><a href="mailto:kontaktdokrzysia@gmail.com" class="bg-orange-500 hover:bg-orange-600 text-white font-bold py-3 px-6 rounded-full transition duration-300 ease-in-out transform hover:scale-105 w-full max-w-xs inline-block text-center">Skontaktuj się ze mną tutaj</a></header><main class="container mx-auto px-4 py-8"><div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"><a class="block" href="/przyrodnicze"><div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 ease-in-out transform hover:scale-105 animate-fade-in-up" style="animation-delay:0ms"><div class="relative h-64"><img alt="Przyrodnicze" loading="lazy" decoding="async" data-nimg="fill" class="object-cover" style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent" src="/img/rosliny.webp"/></div><div class="p-6 text-center"><h2 class="text-2xl font-semibold mb-3 text-gray-800 line-clamp-2">Przyrodnicze</h2><button class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-full transition duration-300 ease-in-out w-full">Rozwiń</button></div></div></a><a class="block" href="/wydarzenia"><div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 ease-in-out transform hover:scale-105 animate-fade-in-up" style="animation-delay:150ms"><div class="relative h-64"><img alt="Wydarzenia" loading="lazy" decoding="async" data-nimg="fill" class="object-cover" style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent" src="/img/ludzie.webp"/></div><div class="p-6 text-center"><h2 class="text-2xl font-semibold mb-3 text-gray-800 line-clamp-2">Wydarzenia</h2><button class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-full transition duration-300 ease-in-out w-full">Rozwiń</button></div></div></a><a class="block" href="/inne"><div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 ease-in-out transform hover:scale-105 animate-fade-in-up" style="animation-delay:300ms"><div class="relative h-64"><img alt="Inne" loading="lazy" decoding="async" data-nimg="fill" class="object-cover" style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent" src="/img/inne.webp"/></div><div class="p-6 text-center"><h2 class="text-2xl font-semibold mb-3 text-gray-800 line-clamp-2">Inne</h2><button class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-full transition duration-300 ease-in-out w-full">Rozwiń</button></div></div></a></div></main></div><script src="/_next/static/chunks/webpack-215d93283df1116f.js" async=""></script><script>(self.__next_f=self.__next_f||[]).push([0])</script><script>self.__next_f.push([1,"1:\"$Sreact.fragment\"\n2:I[5244,[],\"\"]\n3:I[3866,[],\"\"]\n4:I[8173,[\"742\",\"static/chunks/742-d38a221f97e11c93.js\",\"974\",\"static/chunks/app/page-356b50db44fcdd20.js\"],\"\"]\n5:I[7970,[\"742\",\"static/chunks/742-d38a221f97e11c93.js\",\"974\",\"static/chunks/app/page-356b50db44fcdd20.js\"],\"Image\"]\n6:I[6213,[],\"OutletBoundary\"]\n8:I[6213,[],\"MetadataBoundary\"]\na:I[6213,[],\"ViewportBoundary\"]\nc:I[4835,[],\"\"]\n:HL[\"/_next/static/css/5b9794e8c2b9a58c.css\",\"style\"]\n"])</script><script>self.__next_f.push([1,"0:{\"P\":null,\"b\":\"IqQacaUWG2j6KWeGnHwyL\",\"p\":\"\",\"c\":[\"\",\"\"],\"i\":false,\"f\":[[[\"\",{\"children\":[\"__PAGE__\",{}]},\"$undefined\",\"$undefined\",true],[\"\",[\"$\",\"$1\",\"c\",{\"children\":[[[\"$\",\"link\",\"0\",{\"rel\":\"stylesheet\",\"href\":\"/_next/static/css/5b9794e8c2b9a58c.css\",\"precedence\":\"next\",\"crossOrigin\":\"$undefined\",\"nonce\":\"$undefined\"}]],[\"$\",\"html\",null,{\"lang\":\"pl\",\"children\":[[\"$\",\"head\",null,{\"children\":[\"$\",\"style\",null,{\"children\":\"\\n          @keyframes fadeInDown {\\n            from {\\n              opacity: 0;\\n              transform: translate3d(0, -20px, 0);\\n            }\\n            to {\\n              opacity: 1;\\n              transform: translate3d(0, 0, 0);\\n            }\\n          }\\n          \\n          @keyframes fadeInUp {\\n            from {\\n              opacity: 0;\\n              transform: translate3d(0, 20px, 0);\\n            }\\n            to {\\n              opacity: 1;\\n              transform: translate3d(0, 0, 0);\\n            }\\n          }\\n          \\n          .animate-fade-in-down {\\n            animation: fadeInDown 0.5s ease-out;\\n          }\\n          \\n          .animate-fade-in-up {\\n            animation: fadeInUp 0.5s ease-out;\\n          }\\n\\n          .line-clamp-2 {\\n            display: -webkit-box;\\n            -webkit-line-clamp: 2;\\n            -webkit-box-orient: vertical;\\n            overflow: hidden;\\n          }\\n        \"}]}],[\"$\",\"body\",null,{\"className\":\"__className_d65c78\",\"children\":[\"$\",\"$L2\",null,{\"parallelRouterKey\":\"children\",\"segmentPath\":[\"children\"],\"error\":\"$undefined\",\"errorStyles\":\"$undefined\",\"errorScripts\":\"$undefined\",\"template\":[\"$\",\"$L3\",null,{}],\"templateStyles\":\"$undefined\",\"templateScripts\":\"$undefined\",\"notFound\":[[],[[\"$\",\"title\",null,{\"children\":\"404: This page could not be found.\"}],[\"$\",\"div\",null,{\"style\":{\"fontFamily\":\"system-ui,\\\"Segoe UI\\\",Roboto,Helvetica,Arial,sans-serif,\\\"Apple Color Emoji\\\",\\\"Segoe UI Emoji\\\"\",\"height\":\"100vh\",\"textAlign\":\"center\",\"display\":\"flex\",\"flexDirection\":\"column\",\"alignItems\":\"center\",\"justifyContent\":\"center\"},\"children\":[\"$\",\"div\",null,{\"children\":[[\"$\",\"style\",null,{\"dangerouslySetInnerHTML\":{\"__html\":\"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}\"}}],[\"$\",\"h1\",null,{\"className\":\"next-error-h1\",\"style\":{\"display\":\"inline-block\",\"margin\":\"0 20px 0 0\",\"padding\":\"0 23px 0 0\",\"fontSize\":24,\"fontWeight\":500,\"verticalAlign\":\"top\",\"lineHeight\":\"49px\"},\"children\":404}],[\"$\",\"div\",null,{\"style\":{\"display\":\"inline-block\"},\"children\":[\"$\",\"h2\",null,{\"style\":{\"fontSize\":14,\"fontWeight\":400,\"lineHeight\":\"49px\",\"margin\":0},\"children\":\"This page could not be found.\"}]}]]}]}]]],\"forbidden\":\"$undefined\",\"unauthorized\":\"$undefined\"}]}]]}]]}],{\"children\":[\"__PAGE__\",[\"$\",\"$1\",\"c\",{\"children\":[[\"$\",\"div\",null,{\"className\":\"min-h-screen bg-gradient-to-br from-blue-100 to-purple-100 flex flex-col items-center justify-center\",\"children\":[[\"$\",\"header\",null,{\"className\":\"text-center mb-12 animate-fade-in-down\",\"children\":[[\"$\",\"h1\",null,{\"className\":\"text-5xl font-bold mb-4 text-blue-800\",\"children\":\"Jestem Krzyś\"}],[\"$\",\"p\",null,{\"className\":\"text-xl mb-2 text-gray-700\",\"children\":\"Od zawsze interesowałem się fotografią.\"}],[\"$\",\"p\",null,{\"className\":\"text-xl mb-6 text-gray-700\",\"children\":\"Kocham robić zdjęcia.\"}],[\"$\",\"a\",null,{\"href\":\"mailto:kontaktdokrzysia@gmail.com\",\"className\":\"bg-orange-500 hover:bg-orange-600 text-white font-bold py-3 px-6 rounded-full transition duration-300 ease-in-out transform hover:scale-105 w-full max-w-xs inline-block text-center\",\"children\":\"Skontaktuj się ze mną tutaj\"}]]}],[\"$\",\"main\",null,{\"className\":\"container mx-auto px-4 py-8\",\"children\":[\"$\",\"div\",null,{\"className\":\"grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8\",\"children\":[[\"$\",\"$L4\",\"Przyrodnicze\",{\"href\":\"/przyrodnicze\",\"className\":\"block\",\"children\":[\"$\",\"div\",null,{\"className\":\"bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 ease-in-out transform hover:scale-105 animate-fade-in-up\",\"style\":{\"animationDelay\":\"0ms\"},\"children\":[[\"$\",\"div\",null,{\"className\":\"relative h-64\",\"children\":[\"$\",\"$L5\",null,{\"src\":\"/img/rosliny.webp\",\"alt\":\"Przyrodnicze\",\"fill\":true,\"className\":\"object-cover\"}]}],[\"$\",\"div\",null,{\"className\":\"p-6 text-center\",\"children\":[[\"$\",\"h2\",null,{\"className\":\"text-2xl font-semibold mb-3 text-gray-800 line-clamp-2\",\"children\":\"Przyrodnicze\"}],[\"$\",\"button\",null,{\"className\":\"bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-full transition duration-300 ease-in-out w-full\",\"children\":\"Rozwiń\"}]]}]]}]}],[\"$\",\"$L4\",\"Wydarzenia\",{\"href\":\"/wydarzenia\",\"className\":\"block\",\"children\":[\"$\",\"div\",null,{\"className\":\"bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 ease-in-out transform hover:scale-105 animate-fade-in-up\",\"style\":{\"animationDelay\":\"150ms\"},\"children\":[[\"$\",\"div\",null,{\"className\":\"relative h-64\",\"children\":[\"$\",\"$L5\",null,{\"src\":\"/img/ludzie.webp\",\"alt\":\"Wydarzenia\",\"fill\":true,\"className\":\"object-cover\"}]}],[\"$\",\"div\",null,{\"className\":\"p-6 text-center\",\"children\":[[\"$\",\"h2\",null,{\"className\":\"text-2xl font-semibold mb-3 text-gray-800 line-clamp-2\",\"children\":\"Wydarzenia\"}],[\"$\",\"button\",null,{\"className\":\"bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-full transition duration-300 ease-in-out w-full\",\"children\":\"Rozwiń\"}]]}]]}]}],[\"$\",\"$L4\",\"Inne\",{\"href\":\"/inne\",\"className\":\"block\",\"children\":[\"$\",\"div\",null,{\"className\":\"bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 ease-in-out transform hover:scale-105 animate-fade-in-up\",\"style\":{\"animationDelay\":\"300ms\"},\"children\":[[\"$\",\"div\",null,{\"className\":\"relative h-64\",\"children\":[\"$\",\"$L5\",null,{\"src\":\"/img/inne.webp\",\"alt\":\"Inne\",\"fill\":true,\"className\":\"object-cover\"}]}],[\"$\",\"div\",null,{\"className\":\"p-6 text-center\",\"children\":[[\"$\",\"h2\",null,{\"className\":\"text-2xl font-semibold mb-3 text-gray-800 line-clamp-2\",\"children\":\"Inne\"}],[\"$\",\"button\",null,{\"className\":\"bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-full transition duration-300 ease-in-out w-full\",\"children\":\"Rozwiń\"}]]}]]}]}]]}]}]]}],null,[\"$\",\"$L6\",null,{\"children\":\"$L7\"}]]}],{},null,false]},null,false],[\"$\",\"$1\",\"h\",{\"children\":[null,[\"$\",\"$1\",\"LRU9Qsbushyl1Q50GmSNW\",{\"children\":[[\"$\",\"$L8\",null,{\"children\":\"$L9\"}],[\"$\",\"$La\",null,{\"children\":\"$Lb\"}],null]}]]}],false]],\"m\":\"$undefined\",\"G\":[\"$c\",\"$undefined\"],\"s\":false,\"S\":true}\n"])</script><script>self.__next_f.push([1,"b:[[\"$\",\"meta\",\"0\",{\"name\":\"viewport\",\"content\":\"width=device-width, initial-scale=1\"}]]\n9:[[\"$\",\"meta\",\"0\",{\"charSet\":\"utf-8\"}],[\"$\",\"title\",\"1\",{\"children\":\"Zdjęcia Krzysia\"}],[\"$\",\"meta\",\"2\",{\"name\":\"description\",\"content\":\"Świetne zdjęcia zwierząt, roślin oraz relacje z wydarzeń! Musisz wpaść i popatrzeć!\"}],[\"$\",\"link\",\"3\",{\"rel\":\"icon\",\"href\":\"/favicon.ico\",\"type\":\"image/x-icon\",\"sizes\":\"16x16\"}]]\n"])</script><script>self.__next_f.push([1,"7:null\n"])</script></body></html>
+  <body>
+
+    <div id="kontakt" class="modal">
+      <div class="modal-content center-align">
+        <h2>Kontakt</h2>
+        <h5>Jeśli chcesz się ze mną skontaktować, napisz do mnie na adres: <a href="mailto:kontaktdokrzysia@gmail.com">kontaktdokrzysia@gmail.com
+          </a></h5>
+      </div>
+      <div class="modal-footer">
+        <a href="#!" class="modal-close waves-effect waves-green btn-flat">Zamknij</a>
+      </div>
+    </div>
+
+
+
+    <div class="title container section center-align">
+      <div class="container">
+        <h1>Jestem Krzyś</h1>
+
+        <h4 class="flow-text">Od zawsze interesowałem się fotografią.</h4>
+        <h4 class="flow-text">Kocham robić zdjęcia.</h4>
+          <a id="mail" class="mail btn-large orange hoverable" onclick="kontakt()">Skontaktuj się ze mną tutaj</a>
+          <a id="wroc" href="" class="btn-large blue hoverable hide">Wróć na Stronę główną</a>
+      </div>
+    </div>
+
+    <div class="container divider"></div>
+    <div id="glowne" class="container section">
+        <div class="row">
+            <div class="col s12 m12 l4 xl4">
+                <div class="card z-depth-4">
+                    <div class="card-image">
+                      <img src="img\rosliny.webp">
+                      <span class="card-title ">Przyrodnicze</span>
+                    </div>
+                    <div class="card-action center-align pulse">
+                        <a class="waves-effect waves-light btn-large darken-2 hoverable" onclick="przyroda()">Rozwiń<i class="material-icons right">menu</i></a>
+                    </div>
+                  </div>
+            </div>
+            <div class="col s12 m12 l4 xl4">
+                <div class="card z-depth-4">
+                    <div class="card-image ">
+                      <img src="img\ludzie.webp">
+                      <span class="card-title">Wydarzenia</span>
+                    </div>
+                    <div class="card-action center-align pulse">
+                        <a class="waves-effect waves-light btn-large darken-2 hoverable" onclick="wydarzenia()">Rozwiń<i class="material-icons right">menu</i></a>
+                    </div>
+                  </div>
+            </div>
+            <div class="col s12 m12 l4 xl4">
+                <div class="card z-depth-4">
+                    <div class="card-image">
+                      <img src="img\inne.webp">
+                      <span class="card-title">Inne</span>
+                    </div>
+                    <div class="card-action center-align pulse">
+                        <a class="waves-effect waves-light btn-large darken-2 hoverable" onclick="inne()">Rozwiń<i class="material-icons right">menu</i></a>
+                    </div>
+                  </div>
+            </div>
+        </div>
+    </div> 
+
+
+    <div id="przyroda" class="container section valign-wrapper hide">
+        <div class="row">
+          <div class="col s12 m12 l4 xl4">
+            <div class="card z-depth-4">
+                <div class="card-image">
+                  <img src="img\ogrodjaponski24.webp">
+                  <span class="card-title">Ogród Japoński 2024</span>
+                </div>
+                <div class="card-action center-align">
+                    <a href="/ogrodjaponski24/" class="waves-effect waves-light btn-large  darken-2 pulse hoverable">Wchodzę<i class="material-icons right">send</i></a>
+                </div>
+              </div>
+          </div>
+          <div class="col s12 m12 l4 xl4">
+            <div class="card z-depth-4">
+                <div class="card-image">
+                  <img src="img\zoo24.webp">
+                  <span class="card-title">Zoo 2024</span>
+                </div>
+                <div class="card-action center-align">
+                    <a href="/zoo24/" class="waves-effect waves-light btn-large  darken-2 pulse hoverable">Wchodzę<i class="material-icons right">send</i></a>
+                </div>
+              </div>
+          </div>
+          <div class="col s12 m12 l4 xl4">
+            <div class="card z-depth-4">
+                <div class="card-image">
+                  <img src="img\park24.webp">
+                  <span class="card-title">Wiosna 2024</span>
+                </div>
+                <div class="card-action center-align">
+                    <a href="/park24/" class="waves-effect waves-light btn-large  darken-2 pulse hoverable">Wchodzę<i class="material-icons right">send</i></a>
+                </div>
+              </div>
+          </div>
+
+
+
+
+            <div class="col s12 m12 l4 xl4">
+              <div class="card z-depth-4">
+                  <div class="card-image">
+                    <img src="img\zoo23.webp">
+                    <span class="card-title">Zoo 2023</span>
+                  </div>
+                  <div class="card-action center-align">
+                      <a href="/zoo23/" class="waves-effect waves-light btn-large  darken-2 pulse hoverable">Wchodzę<i class="material-icons right">send</i></a>
+                  </div>
+                </div>
+            </div>
+            <div class="col s12 m12 l4 xl4">
+                <div class="card z-depth-4">
+                    <div class="card-image">
+                      <img src="img\wiosna23.webp">
+                      <span class="card-title">Wiosna 2023</span>
+                    </div>
+                    <div class="card-action center-align">
+                        <a href="/wiosna23/" class="waves-effect waves-light btn-large  darken-2 pulse hoverable">Wchodzę<i class="material-icons right">send</i></a>
+                    </div>
+                  </div>
+            </div>
+            <div class="col s12 m12 l4 xl4">
+                <div class="card z-depth-4">
+                    <div class="card-image">
+                      <img src="img\rosliny.webp">
+                      <span class="card-title">2022 Rośliny</span>
+                    </div>
+                    <div class="card-action center-align">
+                        <a href="/rosliny/" class="waves-effect waves-light btn-large  darken-2 pulse hoverable">Wchodzę<i class="material-icons right">send</i></a>
+                    </div>
+                  </div>
+            </div>
+            <div class="col s12 m12 l4 xl4">
+              <div class="card z-depth-4">
+                  <div class="card-image">
+                    <img src="img\zwierzeta.webp">
+                    <span class="card-title">2022 Zwierzęta</span>
+                  </div>
+                  <div class="card-action center-align">
+                      <a href="/zwierzeta/" class="waves-effect waves-light btn-large  darken-2 pulse hoverable">Wchodzę<i class="material-icons right">send</i></a>
+                  </div>
+                </div>
+            </div>
+        </div>
+    </div> 
+
+
+    <div id="wydarzenia" class="container section valign-wrapper hide">
+        <div class="row">
+          <div class="col s12 m12 l4 xl4">
+            <div class="card z-depth-4">
+                <div class="card-image">
+                  <img src="img\wystawakotow24.webp">
+                  <span class="card-title">Wystawa Kotów Rasowych 2024</span>
+                </div>
+                <div class="card-action center-align">
+                    <a href="/wystawakotow24/" class="waves-effect waves-light btn-large  darken-2 pulse hoverable">Wchodzę<i class="material-icons right">send</i></a>
+                </div>
+              </div>
+          </div>
+            <div class="col s12 m12 l4 xl4">
+                <div class="card z-depth-4">
+                    <div class="card-image">
+                      <img src="img\ludzie.webp">
+                      <span class="card-title">Bieg Firmowy</span>
+                    </div>
+                    <div class="card-action center-align">
+                        <a href="/biegfirmowy2022/" class="waves-effect waves-light btn-large  darken-2 pulse hoverable">Wchodzę<i class="material-icons right">send</i></a>
+                    </div>
+                  </div>
+            </div>
+
+            <div class="col s12 m12 l4 xl4">
+                <div class="card z-depth-4">
+                    <div class="card-image ">
+                      <img src="img\wildrun.webp">
+                      <span class="card-title">WildRun</span>
+                    </div>
+                    <div class="card-action center-align">
+                        <a href="/wildrun2022/" class="waves-effect waves-light btn-large  darken-2 pulse hoverable">Wchodzę<i class="material-icons right">send</i></a>
+                    </div>
+                  </div>
+            </div>
+            <div class="col s12 m12 l4 xl4">
+                <div class="card z-depth-4">
+                    <div class="card-image">
+                      <img src="img\halloween22.webp">
+                      <span class="card-title">Bieg Halloween</span>
+                    </div>
+                    <div class="card-action center-align">
+                        <a href="/bieghalloween2022/" class="waves-effect waves-light btn-large  darken-2 pulse hoverable">Wchodzę<i class="material-icons right">send</i></a>
+                    </div>
+                  </div>
+            </div>
+            <div class="col s12 m12 l4 xl4 offset-xl4">
+              <div class="card z-depth-4">
+                  <div class="card-image">
+                    <img src="img\biegtrzechwzgorz22.webp">
+                    <span class="card-title">Bieg Trzech Wzgórz</span>
+                  </div>
+                  <div class="card-action center-align">
+                      <a href="/biegtrzechwzgorz2022/" class="waves-effect waves-light btn-large  darken-2 pulse hoverable">Wchodzę<i class="material-icons right">send</i></a>
+                  </div>
+                </div>
+          </div>
+      </div>  
+    </div> 
+
+
+    <div id="inne" class="container section valign-wrapper hide">
+        <div class="row">
+            <div class="col s12 m12 l4 xl4">
+              <div class="card z-depth-4">
+                  <div class="card-image">
+                    <img src="img\pieski24.webp">
+                    <span class="card-title">Piestiwal 2024 (Pieski)</span>
+                  </div>
+                  <div class="card-action center-align">
+                      <a href="/pieski24/" class="waves-effect waves-light btn-large  darken-2 pulse hoverable">Wchodzę<i class="material-icons right">send</i></a>
+                  </div>
+                </div>
+            </div>
+            <div class="col s12 m12 l4 xl4">
+                <div class="card z-depth-4">
+                    <div class="card-image">
+                      <img src="img\jarmark2022.webp">
+                      <span class="card-title">Jarmark Bożonarodzeniowy</span>
+                    </div>
+                    <div class="card-action center-align">
+                        <a href="/jarmark2022/" class="waves-effect waves-light btn-large  darken-2 pulse hoverable">Wchodzę<i class="material-icons right">send</i></a>
+                    </div>
+                  </div>
+            </div>
+            <div class="col s12 m12 l4 xl4">
+                <div class="card z-depth-4">
+                    <div class="card-image ">
+                      <img src="img\luminapark.webp">
+                      <span class="card-title">Lumina Park</span>
+                    </div>
+                    <div class="card-action center-align">
+                        <a href="/luminapark/" class="waves-effect waves-light btn-large  darken-2 pulse hoverable">Wchodzę<i class="material-icons right">send</i></a>
+                    </div>
+                  </div>
+            </div>
+            <div class="col s12 m12 l4 xl4">
+                <div class="card z-depth-4">
+                    <div class="card-image">
+                      <img src="img\inne.webp">
+                      <span class="card-title">Różne</span>
+                    </div>
+                    <div class="card-action center-align">
+                        <a href="/inne" class="waves-effect waves-light btn-large  darken-2 pulse hoverable">Wchodzę<i class="material-icons right">send</i></a>
+                    </div>
+                  </div>
+            </div>
+        </div>
+    </div> 
+
+
+
+
+
+
+
+
+    <script src="./materialize.min.js"></script>  
+    <script src="./main.js"></script>
+
+
+  </body>
+</html>
