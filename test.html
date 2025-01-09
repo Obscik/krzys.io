@@ -1,34 +1,77 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link type="text/css" rel="stylesheet" href="materialize.min.css"  media="screen,projection"/>
-    <link type="text/css" rel="stylesheet" href="style.css"  media="screen,projection"/>
-    <link rel="shortcut icon" href="img/icon.png" type="image/x-icon">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>Zdjęcia Krzysia</title>
-    <meta name="description" content="Świetne zdjęcia zwierząt, roślin oraz relacje z wydarzeń! Musisz wpaść i popatrzeć!">
-    <meta property="og:title" content="Zdjęcia Krzysia" />
-    <meta property="og:description" content="Świetne zdjęcia zwierząt, roślin oraz relacje z wydarzeń! Musisz wpaść i popatrzeć!" />
-    <meta property="og:url" content="https://zdjeciakrzysia.pl/" />
-  </head>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Category-Subcategory Grid</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100">
+    <div class="container mx-auto px-4 py-8">
+        <!-- Title and Contact Button -->
+        <div class="flex justify-between items-center mb-8">
+            <h1 class="text-3xl font-bold">Zdjęcia Krzysia</h1>
+            <button class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded">
+                Contact Us
+            </button>
+        </div>
 
-  <body>
+        <!-- Main categories -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-8">
+            <div class="bg-white rounded-lg shadow-md overflow-hidden cursor-pointer" onclick="showSubcategories('Category 1')">
+                <img src="https://picsum.photos/seed/cat1/300/200" alt="Category 1" class="w-full h-40 object-cover">
+                <div class="p-4">
+                    <h2 class="text-xl font-semibold text-center">Category 1</h2>
+                </div>
+            </div>
+            <div class="bg-white rounded-lg shadow-md overflow-hidden cursor-pointer" onclick="showSubcategories('Category 2')">
+                <img src="https://picsum.photos/seed/cat2/300/200" alt="Category 2" class="w-full h-40 object-cover">
+                <div class="p-4">
+                    <h2 class="text-xl font-semibold text-center">Category 2</h2>
+                </div>
+            </div>
+            <div class="bg-white rounded-lg shadow-md overflow-hidden cursor-pointer" onclick="showSubcategories('Category 3')">
+                <img src="https://picsum.photos/seed/cat3/300/200" alt="Category 3" class="w-full h-40 object-cover">
+                <div class="p-4">
+                    <h2 class="text-xl font-semibold text-center">Category 3</h2>
+                </div>
+            </div>
+        </div>
 
-<div class="container center">
-<h1>nieźle!</h1>
-</div>
+        <!-- Subcategories (hidden by default) -->
+        <div id="subcategories" class="hidden">
+            <h2 id="subcategoryTitle" class="text-2xl font-bold mb-4"></h2>
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
+                <!-- Subcategory cards will be dynamically inserted here -->
+            </div>
+        </div>
+    </div>
 
+    <script>
+        function showSubcategories(category) {
+            const subcategoriesContainer = document.getElementById('subcategories');
+            const subcategoryTitle = document.getElementById('subcategoryTitle');
+            const subcategoryGrid = subcategoriesContainer.querySelector('div');
 
+            subcategoryTitle.textContent = `${category} Subcategories`;
+            subcategoryGrid.innerHTML = ''; // Clear existing subcategories
 
+            // Generate 10 subcategory cards
+            for (let i = 1; i <= 10; i++) {
+                const card = document.createElement('div');
+                card.className = 'bg-white rounded-lg shadow-md overflow-hidden';
+                card.innerHTML = `
+                    <img src="https://picsum.photos/seed/${category.toLowerCase()}${i}/300/200" alt="Subcategory ${i}" class="w-full h-32 object-cover">
+                    <div class="p-4">
+                        <h3 class="text-lg font-medium text-center">Subcategory ${i}</h3>
+                    </div>
+                `;
+                subcategoryGrid.appendChild(card);
+            }
 
-
-
-
-
-    <script src="./materialize.min.js"></script>  
-    <script src="./main.js"></script>
-
-
-  </body>
+            subcategoriesContainer.classList.remove('hidden');
+        }
+    </script>
+</body>
 </html>
+
