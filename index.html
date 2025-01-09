@@ -1,292 +1,97 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link type="text/css" rel="stylesheet" href="materialize.min.css"  media="screen,projection"/>
-    <link type="text/css" rel="stylesheet" href="style.css"  media="screen,projection"/>
-    <link rel="shortcut icon" href="img/icon.png" type="image/x-icon">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<html lang="pl" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Zdjęcia Krzysia</title>
-    <meta name="description" content="Świetne zdjęcia zwierząt, roślin oraz relacje z wydarzeń! Musisz wpaść i popatrzeć!">
-    <meta property="og:title" content="Zdjęcia Krzysia" />
-    <meta property="og:description" content="Świetne zdjęcia zwierząt, roślin oraz relacje z wydarzeń! Musisz wpaść i popatrzeć!" />
-    <meta property="og:url" content="https://zdjeciakrzysia.pl/" />
-  </head>
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    animation: {
+                        'fade-in': 'fadeIn 0.5s ease-out',
+                    },
+                    keyframes: {
+                        fadeIn: {
+                            '0%': { opacity: 0 },
+                            '100%': { opacity: 1 },
+                        },
+                    },
+                },
+            },
+        }
+    </script>
+    <style>
+        .card-title {
+          font-size: 1.25rem;
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis;
+        }
+        @media (max-width: 640px) {
+          .card-title {
+            font-size: 1rem;
+          }
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        .animate-fade-in {
+            animation: fadeIn 0.5s ease-out;
+        }
+    </style>
+</head>
+<body class="bg-gray-900 text-gray-100 min-h-screen">
+    <div class="container mx-auto px-4 py-8">
+        <header class="text-center mb-12 animate-fade-in">
+            <h1 class="text-4xl font-bold mb-2">Zdjęcia Krzysia</h1>
+            <div class="flex justify-center mt-6 space-x-2">
+              <a href="index.html" class="bg-blue-500 text-white px-4 py-2 rounded-full hover:bg-blue-600 transition duration-300">
+                <i class="fa fa-home fa-2x"></i>
+              </a>
+              <a href="mailto:kontaktdokrzysia@gmail.com" class="bg-orange-600 text-white px-6 py-2 rounded-full hover:bg-orange-800 transition duration-300 inline-block text-center flex items-center space-x-2">
+                <i class="fa fa-envelope fa-2x"></i>
+                <span class="font-semibold text-2xl ">Kontakt</span>
+              </a>
+            </div>  
+        </header>
 
-  <body>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="bg-gray-800 rounded-lg shadow-md overflow-hidden transform hover:scale-105 transition duration-300 animate-fade-in">
+                <img src="img/rosliny.webp" alt="Przyrodnicze" class="w-full h-48 object-cover">
+                <div class="p-4 text-center">
+                    <h2 class="card-title text-3xl  font-semibold mb-2">Przyrodnicze</h2>
+                    <a href="przyrodnicze.html" class="block w-full bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 transition duration-300 text-center text-xl mt-4">
+                        Rozwiń
+                    </a>
+                </div>
+            </div>
 
-    <div id="kontakt" class="modal">
-      <div class="modal-content center-align">
-        <h2>Kontakt</h2>
-        <h5>Jeśli chcesz się ze mną skontaktować, napisz do mnie na adres: <a href="mailto:kontaktdokrzysia@gmail.com">kontaktdokrzysia@gmail.com
-          </a></h5>
-      </div>
-      <div class="modal-footer">
-        <a href="#!" class="modal-close waves-effect waves-green btn-flat">Zamknij</a>
-      </div>
+            <div class="bg-gray-800 rounded-lg shadow-md overflow-hidden transform hover:scale-105 transition duration-300 animate-fade-in">
+                <img src="img/ludzie.webp" alt="Wydarzenia" class="w-full h-48 object-cover">
+                <div class="p-4 text-center">
+                    <h2 class="card-title text-3xl  font-semibold mb-2">Wydarzenia</h2>
+                    <a href="wydarzenia.html" class="block w-full bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 transition duration-300 text-center text-xl mt-4">
+                        Rozwiń
+                    </a>
+                </div>
+            </div>
+
+            <div class="bg-gray-800 rounded-lg shadow-md overflow-hidden transform hover:scale-105 transition duration-300 animate-fade-in">
+                <img src="img/inne.webp" alt="Inne" class="w-full h-48 object-cover">
+                <div class="p-4 text-center">
+                    <h2 class="card-title text-3xl  font-semibold mb-2">Inne</h2>
+                    <a href="inne.html" class="block w-full bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 transition duration-300 text-center text-xl mt-4">
+                        Rozwiń
+                    </a>
+                </div>
+            </div>
+        </div>
     </div>
-
-
-
-    <div class="title container section center-align">
-      <div class="container">
-        <h1>Jestem Krzyś</h1>
-
-        <h4 class="flow-text">Od zawsze interesowałem się fotografią.</h4>
-        <h4 class="flow-text">Kocham robić zdjęcia.</h4>
-          <a id="mail" class="mail btn-large orange hoverable" onclick="kontakt()">Skontaktuj się ze mną tutaj</a>
-          <a id="wroc" href="" class="btn-large blue hoverable hide">Wróć na Stronę główną</a>
-      </div>
-    </div>
-
-    <div class="container divider"></div>
-    <div id="glowne" class="container section">
-        <div class="row">
-            <div class="col s12 m12 l4 xl4">
-                <div class="card z-depth-4">
-                    <div class="card-image">
-                      <img src="img\rosliny.webp">
-                      <span class="card-title ">Przyrodnicze</span>
-                    </div>
-                    <div class="card-action center-align pulse">
-                        <a class="waves-effect waves-light btn-large darken-2 hoverable" onclick="przyroda()">Rozwiń<i class="material-icons right">menu</i></a>
-                    </div>
-                  </div>
-            </div>
-            <div class="col s12 m12 l4 xl4">
-                <div class="card z-depth-4">
-                    <div class="card-image ">
-                      <img src="img\ludzie.webp">
-                      <span class="card-title">Wydarzenia</span>
-                    </div>
-                    <div class="card-action center-align pulse">
-                        <a class="waves-effect waves-light btn-large darken-2 hoverable" onclick="wydarzenia()">Rozwiń<i class="material-icons right">menu</i></a>
-                    </div>
-                  </div>
-            </div>
-            <div class="col s12 m12 l4 xl4">
-                <div class="card z-depth-4">
-                    <div class="card-image">
-                      <img src="img\inne.webp">
-                      <span class="card-title">Inne</span>
-                    </div>
-                    <div class="card-action center-align pulse">
-                        <a class="waves-effect waves-light btn-large darken-2 hoverable" onclick="inne()">Rozwiń<i class="material-icons right">menu</i></a>
-                    </div>
-                  </div>
-            </div>
-        </div>
-    </div> 
-
-
-    <div id="przyroda" class="container section valign-wrapper hide">
-        <div class="row">
-          <div class="col s12 m12 l4 xl4">
-            <div class="card z-depth-4">
-                <div class="card-image">
-                  <img src="img\ogrodjaponski24.webp">
-                  <span class="card-title">Ogród Japoński 2024</span>
-                </div>
-                <div class="card-action center-align">
-                    <a href="/ogrodjaponski24/" class="waves-effect waves-light btn-large  darken-2 pulse hoverable">Wchodzę<i class="material-icons right">send</i></a>
-                </div>
-              </div>
-          </div>
-          <div class="col s12 m12 l4 xl4">
-            <div class="card z-depth-4">
-                <div class="card-image">
-                  <img src="img\zoo24.webp">
-                  <span class="card-title">Zoo 2024</span>
-                </div>
-                <div class="card-action center-align">
-                    <a href="/zoo24/" class="waves-effect waves-light btn-large  darken-2 pulse hoverable">Wchodzę<i class="material-icons right">send</i></a>
-                </div>
-              </div>
-          </div>
-          <div class="col s12 m12 l4 xl4">
-            <div class="card z-depth-4">
-                <div class="card-image">
-                  <img src="img\park24.webp">
-                  <span class="card-title">Wiosna 2024</span>
-                </div>
-                <div class="card-action center-align">
-                    <a href="/park24/" class="waves-effect waves-light btn-large  darken-2 pulse hoverable">Wchodzę<i class="material-icons right">send</i></a>
-                </div>
-              </div>
-          </div>
-
-
-
-
-            <div class="col s12 m12 l4 xl4">
-              <div class="card z-depth-4">
-                  <div class="card-image">
-                    <img src="img\zoo23.webp">
-                    <span class="card-title">Zoo 2023</span>
-                  </div>
-                  <div class="card-action center-align">
-                      <a href="/zoo23/" class="waves-effect waves-light btn-large  darken-2 pulse hoverable">Wchodzę<i class="material-icons right">send</i></a>
-                  </div>
-                </div>
-            </div>
-            <div class="col s12 m12 l4 xl4">
-                <div class="card z-depth-4">
-                    <div class="card-image">
-                      <img src="img\wiosna23.webp">
-                      <span class="card-title">Wiosna 2023</span>
-                    </div>
-                    <div class="card-action center-align">
-                        <a href="/wiosna23/" class="waves-effect waves-light btn-large  darken-2 pulse hoverable">Wchodzę<i class="material-icons right">send</i></a>
-                    </div>
-                  </div>
-            </div>
-            <div class="col s12 m12 l4 xl4">
-                <div class="card z-depth-4">
-                    <div class="card-image">
-                      <img src="img\rosliny.webp">
-                      <span class="card-title">2022 Rośliny</span>
-                    </div>
-                    <div class="card-action center-align">
-                        <a href="/rosliny/" class="waves-effect waves-light btn-large  darken-2 pulse hoverable">Wchodzę<i class="material-icons right">send</i></a>
-                    </div>
-                  </div>
-            </div>
-            <div class="col s12 m12 l4 xl4">
-              <div class="card z-depth-4">
-                  <div class="card-image">
-                    <img src="img\zwierzeta.webp">
-                    <span class="card-title">2022 Zwierzęta</span>
-                  </div>
-                  <div class="card-action center-align">
-                      <a href="/zwierzeta/" class="waves-effect waves-light btn-large  darken-2 pulse hoverable">Wchodzę<i class="material-icons right">send</i></a>
-                  </div>
-                </div>
-            </div>
-        </div>
-    </div> 
-
-
-    <div id="wydarzenia" class="container section valign-wrapper hide">
-        <div class="row">
-          <div class="col s12 m12 l4 xl4">
-            <div class="card z-depth-4">
-                <div class="card-image">
-                  <img src="img\wystawakotow24.webp">
-                  <span class="card-title">Wystawa Kotów Rasowych 2024</span>
-                </div>
-                <div class="card-action center-align">
-                    <a href="/wystawakotow24/" class="waves-effect waves-light btn-large  darken-2 pulse hoverable">Wchodzę<i class="material-icons right">send</i></a>
-                </div>
-              </div>
-          </div>
-            <div class="col s12 m12 l4 xl4">
-                <div class="card z-depth-4">
-                    <div class="card-image">
-                      <img src="img\ludzie.webp">
-                      <span class="card-title">Bieg Firmowy</span>
-                    </div>
-                    <div class="card-action center-align">
-                        <a href="/biegfirmowy2022/" class="waves-effect waves-light btn-large  darken-2 pulse hoverable">Wchodzę<i class="material-icons right">send</i></a>
-                    </div>
-                  </div>
-            </div>
-
-            <div class="col s12 m12 l4 xl4">
-                <div class="card z-depth-4">
-                    <div class="card-image ">
-                      <img src="img\wildrun.webp">
-                      <span class="card-title">WildRun</span>
-                    </div>
-                    <div class="card-action center-align">
-                        <a href="/wildrun2022/" class="waves-effect waves-light btn-large  darken-2 pulse hoverable">Wchodzę<i class="material-icons right">send</i></a>
-                    </div>
-                  </div>
-            </div>
-            <div class="col s12 m12 l4 xl4">
-                <div class="card z-depth-4">
-                    <div class="card-image">
-                      <img src="img\halloween22.webp">
-                      <span class="card-title">Bieg Halloween</span>
-                    </div>
-                    <div class="card-action center-align">
-                        <a href="/bieghalloween2022/" class="waves-effect waves-light btn-large  darken-2 pulse hoverable">Wchodzę<i class="material-icons right">send</i></a>
-                    </div>
-                  </div>
-            </div>
-            <div class="col s12 m12 l4 xl4 offset-xl4">
-              <div class="card z-depth-4">
-                  <div class="card-image">
-                    <img src="img\biegtrzechwzgorz22.webp">
-                    <span class="card-title">Bieg Trzech Wzgórz</span>
-                  </div>
-                  <div class="card-action center-align">
-                      <a href="/biegtrzechwzgorz2022/" class="waves-effect waves-light btn-large  darken-2 pulse hoverable">Wchodzę<i class="material-icons right">send</i></a>
-                  </div>
-                </div>
-          </div>
-      </div>  
-    </div> 
-
-
-    <div id="inne" class="container section valign-wrapper hide">
-        <div class="row">
-            <div class="col s12 m12 l4 xl4">
-              <div class="card z-depth-4">
-                  <div class="card-image">
-                    <img src="img\pieski24.webp">
-                    <span class="card-title">Piestiwal 2024 (Pieski)</span>
-                  </div>
-                  <div class="card-action center-align">
-                      <a href="/pieski24/" class="waves-effect waves-light btn-large  darken-2 pulse hoverable">Wchodzę<i class="material-icons right">send</i></a>
-                  </div>
-                </div>
-            </div>
-            <div class="col s12 m12 l4 xl4">
-                <div class="card z-depth-4">
-                    <div class="card-image">
-                      <img src="img\jarmark2022.webp">
-                      <span class="card-title">Jarmark Bożonarodzeniowy</span>
-                    </div>
-                    <div class="card-action center-align">
-                        <a href="/jarmark2022/" class="waves-effect waves-light btn-large  darken-2 pulse hoverable">Wchodzę<i class="material-icons right">send</i></a>
-                    </div>
-                  </div>
-            </div>
-            <div class="col s12 m12 l4 xl4">
-                <div class="card z-depth-4">
-                    <div class="card-image ">
-                      <img src="img\luminapark.webp">
-                      <span class="card-title">Lumina Park</span>
-                    </div>
-                    <div class="card-action center-align">
-                        <a href="/luminapark/" class="waves-effect waves-light btn-large  darken-2 pulse hoverable">Wchodzę<i class="material-icons right">send</i></a>
-                    </div>
-                  </div>
-            </div>
-            <div class="col s12 m12 l4 xl4">
-                <div class="card z-depth-4">
-                    <div class="card-image">
-                      <img src="img\inne.webp">
-                      <span class="card-title">Różne</span>
-                    </div>
-                    <div class="card-action center-align">
-                        <a href="/inne" class="waves-effect waves-light btn-large  darken-2 pulse hoverable">Wchodzę<i class="material-icons right">send</i></a>
-                    </div>
-                  </div>
-            </div>
-        </div>
-    </div> 
-
-
-
-
-
-
-
-
-    <script src="./materialize.min.js"></script>  
-    <script src="./main.js"></script>
-
-
-  </body>
+</body>
 </html>
